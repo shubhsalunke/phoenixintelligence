@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PhoenixIntelligence LEA Portal — Restricted Officer Login & Verification.">
+  <title>PhoenixIntelligence — Officer Portal Login</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-body">
+
+  <!-- Minimal Header -->
+  <header class="navbar" style="border-bottom: 1px solid var(--border-subtle);">
+    <div class="container nav-container" style="justify-content: space-between;">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-symbol">P</div>
+        <div>
+          <div class="brand-title">PhoenixIntelligence</div>
+          <div class="brand-sub">Officer Portal</div>
+        </div>
+      </a>
+
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <span class="status-badge">
+          <span class="pulse-dot"></span>
+          <span>RESTRICTED LEA PORTAL</span>
+        </span>
+        <a href="index.html" class="btn btn-cyan" style="padding: 8px 16px; font-size: 13px;">
+          &larr; Back to Landing Page
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Login Main Container -->
+  <main class="login-container">
+    <div class="login-card">
+      <div class="login-brand">
+        <div class="logo-symbol">P</div>
+        <h2 class="login-title">LEA Officer Login</h2>
+        <p class="login-subtitle">Enter your official credentials to access Phoenix Cyber Matrix</p>
+      </div>
+
+      <div class="login-security-notice">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+        <span>Restricted to authorized Law Enforcement personnel only. All access is logged and audited.</span>
+      </div>
+
+      <form id="loginForm">
+        <div class="form-row">
+          <label for="officerId">Officer Badge No. / Gov Email</label>
+          <input type="text" id="officerId" placeholder="e.g. POL-94821 or officer@gov.in" required>
+        </div>
+
+        <div class="form-row">
+          <label for="password">Encrypted Password</label>
+          <input type="password" id="password" placeholder="••••••••••••" required>
+        </div>
+
+        <div class="form-row">
+          <label for="authKey">LEA Authorization Token / 2FA Key</label>
+          <input type="text" id="authKey" placeholder="e.g. PHX-8842-SEC" required>
+        </div>
+
+        <div class="login-options">
+          <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+            <input type="checkbox" style="width: auto;">
+            <span>Remember Officer Session</span>
+          </label>
+          <a href="#" onclick="alert('For security verification or password resets, please contact your LEA Nodal Officer or Security Support.'); return false;">Forgot Credentials?</a>
+        </div>
+
+        <button type="submit" class="btn btn-emerald btn-login">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+          <span>Sign In to Phoenix Matrix</span>
+        </button>
+      </form>
+
+      <div class="login-back-link">
+        Don't have platform authorization? <br>
+        <a href="index.html#contactModal" onclick="window.location.href='index.html'; return false;">Request LEA Access Clearance &rarr;</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Login Footer -->
+  <footer style="padding: 20px 0; text-align: center; color: var(--text-muted); font-size: 13px; border-top: 1px solid var(--border-subtle);">
+    <div class="container" style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+      <div>&copy; 2026 Phoenix Cyber Intelligence Platform. All rights reserved.</div>
+      <div style="display: flex; gap: 16px; font-size: 12px;">
+        <a href="terms.html" style="color: var(--text-dim); text-decoration: underline;">Terms of Service</a>
+        <a href="privacy.html" style="color: var(--text-dim); text-decoration: underline;">Privacy Policy</a>
+        <a href="index.html" style="color: var(--text-dim); text-decoration: underline;">Platform Home</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

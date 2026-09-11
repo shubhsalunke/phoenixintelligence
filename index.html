@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PhoenixIntelligence — Autonomous Cyber Reconnaissance & Threat Matrix platform for Law Enforcement Agencies, Police Cyber Units, and Intelligence Analysts.">
+  <title>PhoenixIntelligence — Next-Gen Cyber Intelligence Platform</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo">
+        <div class="logo-symbol">P</div>
+        <div>
+          <div class="brand-title">PhoenixIntelligence</div>
+          <div class="brand-sub">Cyber Intelligence Platform</div>
+        </div>
+        <div class="status-badge">
+          <span class="pulse-dot"></span>
+          <span>System Online</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="#home" class="nav-link">Overview</a>
+        <a href="#recon-demo" class="nav-link">Live Recon Demo</a>
+        <a href="#modules" class="nav-link">10 Core Modules</a>
+        <a href="#security" class="nav-link">Security Specs</a>
+        <a href="#workflow" class="nav-link">Workflow</a>
+        <a href="#reviews" class="nav-link">Officer Reviews</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-cyan" data-open-modal style="padding: 10px 18px; font-size: 14px;">
+          <span>Request Access</span>
+        </button>
+        <a href="login.html" class="btn btn-cyan" style="padding: 10px 18px; font-size: 14px; background: rgba(99, 102, 241, 0.15); border-color: rgba(99, 102, 241, 0.4); color: #a5b4fc;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+          <span>Officer Login</span>
+        </a>
+      </div>
+
+      <button class="mobile-toggle" aria-label="Toggle Navigation Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer">
+      <a href="#home" class="nav-link">Overview</a>
+      <a href="#recon-demo" class="nav-link">Live Recon Demo</a>
+      <a href="#modules" class="nav-link">10 Core Modules</a>
+      <a href="#security" class="nav-link">Security Specs</a>
+      <a href="#workflow" class="nav-link">Workflow</a>
+      <a href="#reviews" class="nav-link">Officer Reviews</a>
+      <button class="btn btn-cyan" data-open-modal>
+        <span>Request Access</span>
+      </button>
+      <a href="login.html" class="btn btn-cyan" style="background: rgba(99, 102, 241, 0.15); color: #a5b4fc;">
+        <span>Officer Login Portal</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="container hero-grid">
+    <div>
+      <div class="hero-pill">
+        <span>AUTONOMOUS THREAT RECONNAISSANCE & INTELLIGENCE</span>
+      </div>
+
+      <h1 class="hero-heading">
+        Empowering Cyber Defense & <span class="gradient-span">Digital Intelligence</span>
+      </h1>
+
+      <p class="hero-lead">
+        Phoenix is an enterprise-grade cyber threat matrix engineered exclusively for Law Enforcement Agencies, Police Cyber Units, and Intelligence Analysts to resolve multi-vector digital threats in real-time.
+      </p>
+
+      <div class="hero-cta-wrap">
+        <button class="btn btn-emerald" data-open-modal>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+          <span>Request Platform Access</span>
+        </button>
+
+        <a href="#recon-demo" class="btn btn-cyan">
+          <span>Interactive Recon Demo</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </div>
+
+      <div class="hero-proof-bar">
+        <div class="proof-badge">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          <span>Trusted by <strong>50K+ Professionals</strong></span>
+        </div>
+        <div class="proof-badge">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect><polyline points="17 2 12 7 7 2"></polyline></svg>
+          <span><strong>10 Core</strong> Intelligence Modules</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- HERO VISUAL HUD -->
+    <div class="hud-wrapper">
+      <div class="hud-card">
+        <div class="hud-topbar">
+          <span>PHOENIX :: THREAT MATRIX HUD</span>
+          <span style="color: var(--emerald-cta);">&#9679; TELEMETRY ONLINE</span>
+        </div>
+
+        <div class="hud-content">
+          <div class="hud-scanner-box">
+            <div class="scanner-row">
+              <span class="key">Target Status:</span>
+              <span class="val emerald">Active Node Traced</span>
+            </div>
+            <div class="scanner-row">
+              <span class="key">Scans Processed:</span>
+              <span class="val" id="hudThreats">18,420</span>
+            </div>
+            <div class="scanner-row">
+              <span class="key">Signal Integrity:</span>
+              <span class="val">99.8% AES-256 GCM</span>
+            </div>
+
+            <div class="radar-gauge">
+              <div class="radar-fill"></div>
+            </div>
+          </div>
+
+          <div class="hud-feed">
+            <div class="feed-item">
+              <span class="time">[16:45:02]</span>
+              <span class="tag">RECON:</span>
+              <span class="text">Multi-Vector OSINT Engine Online</span>
+            </div>
+            <div class="feed-item">
+              <span class="time">[16:45:06]</span>
+              <span class="tag">FORENSICS:</span>
+              <span class="text">CDR & IPDR Graphing Active</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE RECON DEMO PANEL -->
+  <section id="recon-demo" class="section container">
+    <div class="section-header">
+      <div class="section-pill">INTERACTIVE SIMULATION</div>
+      <h2 class="section-title">Explore <span>Live Recon Capabilities</span></h2>
+      <p class="section-subtitle">Click below to preview real-time intelligence output mockups generated across Phoenix core modules.</p>
+    </div>
+
+    <div class="demo-matrix-box">
+      <div class="demo-tabs">
+        <button class="demo-tab-btn active" data-tab="ip">IP Geolocation Recon</button>
+        <button class="demo-tab-btn" data-tab="cdr">CDR & Tower Graphing</button>
+        <button class="demo-tab-btn" data-tab="crypto">Crypto Wallet Trace</button>
+        <button class="demo-tab-btn" data-tab="darkweb">Dark Web Leak Monitor</button>
+      </div>
+
+      <div id="demoOutput" class="demo-output-panel">
+        <div class="output-row"><span class="output-label">Target IP:</span><span class="output-val cyan">185.220.101.5</span></div>
+        <div class="output-row"><span class="output-label">ISP & Network:</span><span class="output-val">M247 Ltd (Tor Exit Node Detected)</span></div>
+        <div class="output-row"><span class="output-label">Geolocation:</span><span class="output-val">Frankfurt, Germany (50.1109, 8.6821)</span></div>
+        <div class="output-row"><span class="output-label">Risk Level:</span><span class="output-val emerald">High Anonymity / Flagged Node</span></div>
+        <div class="output-row"><span class="output-label">Associated Hashes:</span><span class="output-val">14 Breach Records Linked</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 CORE MODULES SHOWCASE -->
+  <section id="modules" class="section container">
+    <div class="section-header">
+      <div class="section-pill">10 CORE MODULES</div>
+      <h2 class="section-title">Flagship <span>Intelligence Modules</span></h2>
+      <p class="section-subtitle">A concentrated suite of high-precision investigation tools engineered for tactical speed and evidentiary accuracy.</p>
+    </div>
+
+    <!-- Category Filter Tabs -->
+    <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 40px;">
+      <button class="filter-btn demo-tab-btn active" data-filter="all">All (10)</button>
+      <button class="filter-btn demo-tab-btn" data-filter="intel">Primary Intel (03)</button>
+      <button class="filter-btn demo-tab-btn" data-filter="identity">Identity & Crypto (02)</button>
+      <button class="filter-btn demo-tab-btn" data-filter="osint">Social OSINT (01)</button>
+      <button class="filter-btn demo-tab-btn" data-filter="forensics">Forensics & CDR (03)</button>
+      <button class="filter-btn demo-tab-btn" data-filter="advanced">Advanced Intel (01)</button>
+    </div>
+
+    <div class="modules-grid">
+      <!-- 1. IP Lookup -->
+      <div class="module-card" data-category="intel">
+        <div class="module-top">
+          <div class="module-badge-icon">&#127760;</div>
+          <span class="module-tag tag-core">CORE</span>
+        </div>
+        <h3 class="module-title">IP Geolocation & Threat</h3>
+        <p class="module-desc">Geographic positioning, ISP resolution, TOR exit node & proxy detection.</p>
+        <div class="module-footer-info"><span>Vector: Network</span><span style="color: var(--cyan-accent);">&#9679; Active</span></div>
+      </div>
+
+      <!-- 2. Phone Lookup -->
+      <div class="module-card" data-category="intel">
+        <div class="module-top">
+          <div class="module-badge-icon">&#128241;</div>
+          <span class="module-tag tag-core">CORE</span>
+        </div>
+        <h3 class="module-title">Phone Intelligence</h3>
+        <p class="module-desc">Cellular carrier identification, subscriber region & roaming data.</p>
+        <div class="module-footer-info"><span>Vector: Cellular</span><span style="color: var(--cyan-accent);">&#9679; Active</span></div>
+      </div>
+
+      <!-- 3. Email Lookup -->
+      <div class="module-card" data-category="intel">
+        <div class="module-top">
+          <div class="module-badge-icon">&#128231;</div>
+          <span class="module-tag tag-core">CORE</span>
+        </div>
+        <h3 class="module-title">Email Footprint Recon</h3>
+        <p class="module-desc">Cross-platform digital footprinting & breach record mapping.</p>
+        <div class="module-footer-info"><span>Vector: OSINT</span><span style="color: var(--cyan-accent);">&#9679; Active</span></div>
+      </div>
+
+      <!-- 4. CDR Analysis -->
+      <div class="module-card" data-category="forensics">
+        <div class="module-top">
+          <div class="module-badge-icon">&#128270;</div>
+          <span class="module-tag tag-hot">HOT</span>
+        </div>
+        <h3 class="module-title">CDR Tower Analysis</h3>
+        <p class="module-desc">Call Detail Record pattern parsing & tower location handoff mapping.</p>
+        <div class="module-footer-info"><span>Vector: Telephony</span><span style="color: var(--rose-danger);">&#9679; High Priority</span></div>
+      </div>
+
+      <!-- 5. IPDR Analysis -->
+      <div class="module-card" data-category="forensics">
+        <div class="module-top">
+          <div class="module-badge-icon">&#128270;</div>
+          <span class="module-tag tag-hot">HOT</span>
+        </div>
+        <h3 class="module-title">IPDR Flow Analyzer</h3>
+        <p class="module-desc">IP Detail Record session reconstruction & data traffic flow visualization.</p>
+        <div class="module-footer-info"><span>Vector: Packets</span><span style="color: var(--rose-danger);">&#9679; High Priority</span></div>
+      </div>
+
+      <!-- 6. Image Forensic -->
+      <div class="module-card" data-category="forensics">
+        <div class="module-top">
+          <div class="module-badge-icon">&#128300;</div>
+          <span class="module-tag tag-core">ADV</span>
+        </div>
+        <h3 class="module-title">Image Forensic Suite</h3>
+        <p class="module-desc">EXIF metadata extraction, GPS coordinate recovery & tamper detection.</p>
+        <div class="module-footer-info"><span>Vector: Media</span><span style="color: var(--cyan-accent);">&#9679; Active</span></div>
+      </div>
+
+      <!-- 7. Crypto Lookup -->
+      <div class="module-card" data-category="identity">
+        <div class="module-top">
+          <div class="module-badge-icon">&#128105;&#8205;&#9878;&#65039;</div>
+          <span class="module-tag tag-new">NEW</span>
+        </div>
+        <h3 class="module-title">Crypto Wallet Tracer</h3>
+        <p class="module-desc">Multi-blockchain wallet address tracking & transaction flow mapping.</p>
+        <div class="module-footer-info"><span>Vector: Blockchain</span><span style="color: var(--emerald-cta);">&#9679; Updated</span></div>
+      </div>
+
+      <!-- 8. PAN Lookup -->
+      <div class="module-card" data-category="identity">
+        <div class="module-top">
+          <div class="module-badge-icon">&#128442;</div>
+          <span class="module-tag tag-core">CORE</span>
+        </div>
+        <h3 class="module-title">Identity & PAN Verifier</h3>
+        <p class="module-desc">Taxpayer identity validation & commercial entity structural verification.</p>
+        <div class="module-footer-info"><span>Vector: Identity</span><span style="color: var(--cyan-accent);">&#9679; Active</span></div>
+      </div>
+
+      <!-- 9. Username OSINT -->
+      <div class="module-card" data-category="osint">
+        <div class="module-top">
+          <div class="module-badge-icon">&#129517;</div>
+          <span class="module-tag tag-core">CORE</span>
+        </div>
+        <h3 class="module-title">Multi-Platform Username OSINT</h3>
+        <p class="module-desc">Sub-second alias search across 400+ online networks & forums.</p>
+        <div class="module-footer-info"><span>Vector: OSINT</span><span style="color: var(--cyan-accent);">&#9679; Active</span></div>
+      </div>
+
+      <!-- 10. Dark Web Monitor -->
+      <div class="module-card" data-category="advanced">
+        <div class="module-top">
+          <div class="module-badge-icon">&#127761;</div>
+          <span class="module-tag tag-core">ADV</span>
+        </div>
+        <h3 class="module-title">Dark Web Breach Monitor</h3>
+        <p class="module-desc">Continuous monitoring of darknet marketplaces & breach data dumps.</p>
+        <div class="module-footer-info"><span>Vector: Darknet</span><span style="color: var(--indigo-primary);">&#9679; Continuous</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECURITY & CLEARANCE GRID -->
+  <section id="security" class="section container">
+    <div class="section-header">
+      <div class="section-pill">ENTERPRISE GOVERNANCE</div>
+      <h2 class="section-title">Built for <span>Strict Legal Compliance</span></h2>
+      <p class="section-subtitle">Zero-trust architecture ensuring operational privacy, data sovereignty, and legal compliance.</p>
+    </div>
+
+    <div class="security-grid">
+      <div class="security-card">
+        <div class="security-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+        </div>
+        <h3 class="security-title">LEA Verification Protocol</h3>
+        <p class="security-desc">Strict verification requiring official Authorization & Permission Letters signed by department heads before access clearance.</p>
+      </div>
+
+      <div class="security-card">
+        <div class="security-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        </div>
+        <h3 class="security-title">Court-Admissible Reports</h3>
+        <p class="security-desc">Chain of custody timestamps and cryptographic integrity hashes on every exported investigation report.</p>
+      </div>
+
+      <div class="security-card">
+        <div class="security-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"></path></svg>
+        </div>
+        <h3 class="security-title">Military-Grade Encryption</h3>
+        <p class="security-desc">End-to-end AES-256 GCM encryption on all telemetry data streams with zero persistent search logging.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS SECTION -->
+  <section id="reviews" class="section container">
+    <div class="section-header">
+      <div class="section-pill">VERIFIED FIELD REVIEWS</div>
+      <h2 class="section-title">Trusted by <span>Field Officers</span></h2>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+      <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 24px;">
+        <p style="color: var(--text-main); font-style: italic; margin-bottom: 16px;">"Very powerful tool, love the detailed investigation reports. Saves hours of manual work."</p>
+        <div style="font-weight: 700; color: #fff;">Bandappa</div>
+        <div style="font-size: 13px; color: var(--text-muted);">Civil Police Constable, Cyber Crime Police Station Yadgiri</div>
+      </div>
+
+      <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 24px;">
+        <p style="color: var(--text-main); font-style: italic; margin-bottom: 16px;">"Highly reliable intel-analysis tool. Accurate, fast, and mission-ready for field operations."</p>
+        <div style="font-weight: 700; color: #fff;">Mohit</div>
+        <div style="font-size: 13px; color: var(--text-muted);">Intelligence Analyst</div>
+      </div>
+
+      <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 24px;">
+        <p style="color: var(--text-main); font-style: italic; margin-bottom: 16px;">"Efficient, secure, and analyst-focused. Enhances intelligence workflows flawlessly."</p>
+        <div style="font-weight: 700; color: #fff;">Ravi Kumar</div>
+        <div style="font-size: 13px; color: var(--text-muted);">Gwalior Police, Special Task Force</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="section container">
+    <div class="cta-box">
+      <h2 class="cta-heading">Ready to Deploy Phoenix for Your Cyber Unit?</h2>
+      <p class="cta-sub">Get direct access to our next-generation cyber intelligence threat matrix. Reserved exclusively for government-verified Law Enforcement Officers.</p>
+
+      <div class="cta-buttons-row">
+        <button class="btn btn-emerald" data-open-modal>
+          <span>Request Platform Access</span>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL -->
+  <div id="accessModal" class="modal-overlay">
+    <div class="modal-content-card">
+      <span class="modal-close-btn" data-close-modal>&times;</span>
+      <h3 style="font-family: var(--font-display); font-size: 24px; color: #fff; margin-bottom: 8px;">Request Platform Clearance</h3>
+      <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 20px;">Official authorization letter signed by a competent officer is required for account activation.</p>
+
+      <form id="modalForm">
+        <div class="form-group">
+          <label class="form-label">Officer Full Name</label>
+          <input type="text" class="form-input" placeholder="e.g. Insp. Rajesh Sharma" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Department / Unit</label>
+          <input type="text" class="form-input" placeholder="Cyber Cell / STF" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Official Email Address</label>
+          <input type="email" class="form-input" placeholder="officer@gov.in" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Official Contact Number</label>
+          <input type="tel" class="form-input" placeholder="+91 XXXXX XXXXX" required>
+        </div>
+        <button type="submit" class="btn btn-emerald" style="width: 100%; margin-top: 10px;">
+          <span>Submit Request</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="brand-logo">
+            <div class="logo-symbol">P</div>
+            <div>
+              <div class="brand-title">PhoenixIntelligence</div>
+              <div class="brand-sub">Cyber Intelligence Platform</div>
+            </div>
+          </a>
+          <p>Autonomous Cyber Reconnaissance & Threat Matrix platform engineered exclusively for Law Enforcement Agencies.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Platform</h4>
+          <div class="footer-links-list">
+            <a href="#home">Overview</a>
+            <a href="#recon-demo">Live Demo</a>
+            <a href="#modules">10 Core Modules</a>
+            <a href="#security">Security Specs</a>
+            <a href="login.html" style="color: #a5b4fc; font-weight: 600;">Officer Login Portal &rarr;</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Governance & Legal</h4>
+          <div class="footer-links-list">
+            <a href="terms.html">Terms of Service</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html#lea-rules">LEA Authorization Rules</a>
+            <a href="privacy.html#compliance">Compliance & Audits</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Direct Support</h4>
+          <div class="footer-links-list">
+            <a href="mailto:contact@phoenix-intel.in">contact@phoenix-intel.in</a>
+            <span style="color: var(--text-dim); font-size: 13px;">Cyber Operations Desk</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 32px; padding: 14px 18px; background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); font-size: 12px; color: var(--text-dim); line-height: 1.6;">
+        <strong style="color: var(--text-muted);">Legal Disclaimer:</strong> Phoenix is an enterprise cyber threat reconnaissance and intelligence technology suite engineered for lawful intelligence analysts, cybersecurity professionals, and authorized Law Enforcement Agencies (LEA). Phoenix operates strictly under applicable cyber governance and data privacy regulations.
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>&copy; 2026 Phoenix Cyber Intelligence Platform. All rights reserved.</div>
+        <div style="display: flex; gap: 16px;">
+          <a href="terms.html" style="color: var(--text-muted);">Terms of Service</a>
+          <a href="privacy.html" style="color: var(--text-muted);">Privacy Policy</a>
+          <a href="terms.html#disclaimer" style="color: var(--text-muted);">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
