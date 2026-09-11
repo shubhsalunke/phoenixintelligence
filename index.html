@@ -33,9 +33,8 @@
       <nav class="nav-menu">
         <a href="#home" class="nav-link">Overview</a>
         <a href="#recon-demo" class="nav-link">Live Recon Demo</a>
-        <a href="#modules" class="nav-link">10 Core Modules</a>
+        <a href="#modules" class="nav-link">Intelligence Modules</a>
         <a href="#security" class="nav-link">Security Specs</a>
-        <a href="#workflow" class="nav-link">Workflow</a>
         <a href="#reviews" class="nav-link">Officer Reviews</a>
       </nav>
 
@@ -60,9 +59,8 @@
     <div class="mobile-drawer">
       <a href="#home" class="nav-link">Overview</a>
       <a href="#recon-demo" class="nav-link">Live Recon Demo</a>
-      <a href="#modules" class="nav-link">10 Core Modules</a>
+      <a href="#modules" class="nav-link">Intelligence Modules</a>
       <a href="#security" class="nav-link">Security Specs</a>
-      <a href="#workflow" class="nav-link">Workflow</a>
       <a href="#reviews" class="nav-link">Officer Reviews</a>
       <button class="btn btn-cyan" data-open-modal>
         <span>Request Access</span>
@@ -107,7 +105,7 @@
         </div>
         <div class="proof-badge">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect><polyline points="17 2 12 7 7 2"></polyline></svg>
-          <span><strong>10 Core</strong> Intelligence Modules</span>
+          <span><strong>7 Core</strong> Intelligence Tools</span>
         </div>
       </div>
     </div>
@@ -183,133 +181,76 @@
     </div>
   </section>
 
-  <!-- 10 CORE MODULES SHOWCASE -->
+  <!-- CORE MODULES SHOWCASE -->
   <section id="modules" class="section container">
     <div class="section-header">
-      <div class="section-pill">10 CORE MODULES</div>
-      <h2 class="section-title">Flagship <span>Intelligence Modules</span></h2>
-      <p class="section-subtitle">A concentrated suite of high-precision investigation tools engineered for tactical speed and evidentiary accuracy.</p>
-    </div>
-
-    <!-- Category Filter Tabs -->
-    <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 40px;">
-      <button class="filter-btn demo-tab-btn active" data-filter="all">All (10)</button>
-      <button class="filter-btn demo-tab-btn" data-filter="intel">Primary Intel (03)</button>
-      <button class="filter-btn demo-tab-btn" data-filter="identity">Identity & Crypto (02)</button>
-      <button class="filter-btn demo-tab-btn" data-filter="osint">Social OSINT (01)</button>
-      <button class="filter-btn demo-tab-btn" data-filter="forensics">Forensics & CDR (03)</button>
-      <button class="filter-btn demo-tab-btn" data-filter="advanced">Advanced Intel (01)</button>
+      <div class="section-pill">CORE MODULES</div>
+      <h2 class="section-title">Intelligence <span>Modules</span></h2>
+      <p class="section-subtitle">A suite of essential recon, verification, and digital security tools.</p>
     </div>
 
     <div class="modules-grid">
       <!-- 1. IP Lookup -->
-      <div class="module-card" data-category="intel">
-        <div class="module-top">
-          <div class="module-badge-icon">&#127760;</div>
-          <span class="module-tag tag-core">CORE</span>
+      <div class="module-card">
+        <div class="module-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
         </div>
-        <h3 class="module-title">IP Geolocation & Threat</h3>
-        <p class="module-desc">Geographic positioning, ISP resolution, TOR exit node & proxy detection.</p>
-        <div class="module-footer-info"><span>Vector: Network</span><span style="color: var(--cyan-accent);">&#9679; Active</span></div>
+        <h3 class="module-title">IP Lookup</h3>
+        <p class="module-desc">IP address information.</p>
       </div>
 
-      <!-- 2. Phone Lookup -->
-      <div class="module-card" data-category="intel">
-        <div class="module-top">
-          <div class="module-badge-icon">&#128241;</div>
-          <span class="module-tag tag-core">CORE</span>
+      <!-- 2. Domain Lookup -->
+      <div class="module-card">
+        <div class="module-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
         </div>
-        <h3 class="module-title">Phone Intelligence</h3>
-        <p class="module-desc">Cellular carrier identification, subscriber region & roaming data.</p>
-        <div class="module-footer-info"><span>Vector: Cellular</span><span style="color: var(--cyan-accent);">&#9679; Active</span></div>
+        <h3 class="module-title">Domain Lookup</h3>
+        <p class="module-desc">Domain details and DNS information.</p>
       </div>
 
-      <!-- 3. Email Lookup -->
-      <div class="module-card" data-category="intel">
-        <div class="module-top">
-          <div class="module-badge-icon">&#128231;</div>
-          <span class="module-tag tag-core">CORE</span>
+      <!-- 3. Email Checker -->
+      <div class="module-card">
+        <div class="module-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
         </div>
-        <h3 class="module-title">Email Footprint Recon</h3>
-        <p class="module-desc">Cross-platform digital footprinting & breach record mapping.</p>
-        <div class="module-footer-info"><span>Vector: OSINT</span><span style="color: var(--cyan-accent);">&#9679; Active</span></div>
+        <h3 class="module-title">Email Checker</h3>
+        <p class="module-desc">Email format and security checks.</p>
       </div>
 
-      <!-- 4. CDR Analysis -->
-      <div class="module-card" data-category="forensics">
-        <div class="module-top">
-          <div class="module-badge-icon">&#128270;</div>
-          <span class="module-tag tag-hot">HOT</span>
+      <!-- 4. URL Scanner -->
+      <div class="module-card">
+        <div class="module-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
         </div>
-        <h3 class="module-title">CDR Tower Analysis</h3>
-        <p class="module-desc">Call Detail Record pattern parsing & tower location handoff mapping.</p>
-        <div class="module-footer-info"><span>Vector: Telephony</span><span style="color: var(--rose-danger);">&#9679; High Priority</span></div>
+        <h3 class="module-title">URL Scanner</h3>
+        <p class="module-desc">Check suspicious or unsafe URLs.</p>
       </div>
 
-      <!-- 5. IPDR Analysis -->
-      <div class="module-card" data-category="forensics">
-        <div class="module-top">
-          <div class="module-badge-icon">&#128270;</div>
-          <span class="module-tag tag-hot">HOT</span>
+      <!-- 5. Image Metadata -->
+      <div class="module-card">
+        <div class="module-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
         </div>
-        <h3 class="module-title">IPDR Flow Analyzer</h3>
-        <p class="module-desc">IP Detail Record session reconstruction & data traffic flow visualization.</p>
-        <div class="module-footer-info"><span>Vector: Packets</span><span style="color: var(--rose-danger);">&#9679; High Priority</span></div>
+        <h3 class="module-title">Image Metadata</h3>
+        <p class="module-desc">View available image metadata.</p>
       </div>
 
-      <!-- 6. Image Forensic -->
-      <div class="module-card" data-category="forensics">
-        <div class="module-top">
-          <div class="module-badge-icon">&#128300;</div>
-          <span class="module-tag tag-core">ADV</span>
+      <!-- 6. Username Search -->
+      <div class="module-card">
+        <div class="module-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
         </div>
-        <h3 class="module-title">Image Forensic Suite</h3>
-        <p class="module-desc">EXIF metadata extraction, GPS coordinate recovery & tamper detection.</p>
-        <div class="module-footer-info"><span>Vector: Media</span><span style="color: var(--cyan-accent);">&#9679; Active</span></div>
+        <h3 class="module-title">Username Search</h3>
+        <p class="module-desc">Check username availability across platforms.</p>
       </div>
 
-      <!-- 7. Crypto Lookup -->
-      <div class="module-card" data-category="identity">
-        <div class="module-top">
-          <div class="module-badge-icon">&#128105;&#8205;&#9878;&#65039;</div>
-          <span class="module-tag tag-new">NEW</span>
+      <!-- 7. Security Checker -->
+      <div class="module-card">
+        <div class="module-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
         </div>
-        <h3 class="module-title">Crypto Wallet Tracer</h3>
-        <p class="module-desc">Multi-blockchain wallet address tracking & transaction flow mapping.</p>
-        <div class="module-footer-info"><span>Vector: Blockchain</span><span style="color: var(--emerald-cta);">&#9679; Updated</span></div>
-      </div>
-
-      <!-- 8. PAN Lookup -->
-      <div class="module-card" data-category="identity">
-        <div class="module-top">
-          <div class="module-badge-icon">&#128442;</div>
-          <span class="module-tag tag-core">CORE</span>
-        </div>
-        <h3 class="module-title">Identity & PAN Verifier</h3>
-        <p class="module-desc">Taxpayer identity validation & commercial entity structural verification.</p>
-        <div class="module-footer-info"><span>Vector: Identity</span><span style="color: var(--cyan-accent);">&#9679; Active</span></div>
-      </div>
-
-      <!-- 9. Username OSINT -->
-      <div class="module-card" data-category="osint">
-        <div class="module-top">
-          <div class="module-badge-icon">&#129517;</div>
-          <span class="module-tag tag-core">CORE</span>
-        </div>
-        <h3 class="module-title">Multi-Platform Username OSINT</h3>
-        <p class="module-desc">Sub-second alias search across 400+ online networks & forums.</p>
-        <div class="module-footer-info"><span>Vector: OSINT</span><span style="color: var(--cyan-accent);">&#9679; Active</span></div>
-      </div>
-
-      <!-- 10. Dark Web Monitor -->
-      <div class="module-card" data-category="advanced">
-        <div class="module-top">
-          <div class="module-badge-icon">&#127761;</div>
-          <span class="module-tag tag-core">ADV</span>
-        </div>
-        <h3 class="module-title">Dark Web Breach Monitor</h3>
-        <p class="module-desc">Continuous monitoring of darknet marketplaces & breach data dumps.</p>
-        <div class="module-footer-info"><span>Vector: Darknet</span><span style="color: var(--indigo-primary);">&#9679; Continuous</span></div>
+        <h3 class="module-title">Security Checker</h3>
+        <p class="module-desc">Website security checks.</p>
       </div>
     </div>
   </section>
@@ -443,7 +384,7 @@
           <div class="footer-links-list">
             <a href="#home">Overview</a>
             <a href="#recon-demo">Live Demo</a>
-            <a href="#modules">10 Core Modules</a>
+            <a href="#modules">Intelligence Modules</a>
             <a href="#security">Security Specs</a>
             <a href="login.html" style="color: #a5b4fc; font-weight: 600;">Officer Login Portal &rarr;</a>
           </div>
@@ -464,6 +405,7 @@
           <div class="footer-links-list">
             <a href="mailto:contact@phoenix-intel.in">contact@phoenix-intel.in</a>
             <span style="color: var(--text-dim); font-size: 13px;">Cyber Operations Desk</span>
+            <span style="color: var(--text-dim); font-size: 13px;">Location: New Delhi, India</span>
           </div>
         </div>
       </div>
